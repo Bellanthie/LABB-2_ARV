@@ -13,5 +13,10 @@ public class Car : Vehicle
 	public double TrunkCapacityLiters { get; set; }
 	public bool IsElectreic { get; set; }
 
+	public override void Drive()
+	{
+		Console.WriteLine($"{Brand} car is cruising on the road.");
+	}
+
 
 }

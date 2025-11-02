@@ -1,2 +1,5 @@
 using System;
-public class Car : Truck
+public class Truck : Vehicle
+{
+
+}
