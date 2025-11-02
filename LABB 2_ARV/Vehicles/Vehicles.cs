@@ -1,4 +1,4 @@
-abstract class Vehicle
+public abstract class Vehicle
 {
     // Attributes below:
     public string Brand { get; set; }
