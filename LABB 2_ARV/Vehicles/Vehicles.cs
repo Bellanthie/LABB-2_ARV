@@ -34,12 +34,13 @@ public abstract class Vehicle
     public Vehicle(string brand, int Model, int Year, double Weight, double FuelLevel, double MaxSpeedKmh)
     {
         Brand = brand;
-        Model = model;
+        Model = modelName;
         Year = year;
         Weight = weight;
-        FuelLevel = fuel level;
-        MaxSpeedKmh = max speed kmh;
+        FuelLevel = fuelLevel;
+        MaxSpeedKmh = maxSpeed kmh;
     }
+
 
 
 }
