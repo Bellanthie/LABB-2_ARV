@@ -8,7 +8,8 @@ public abstract class Vehicle
     public double FuelLevel { get; set; }
     public double MaxSpeedKmh { get; set; }
 
-    public void Start()
+    // Common methods within the Vehicle class
+    public void StartEngine()
     {
         global::System.Console.WriteLine("The vehicle starts...");
     }
@@ -28,6 +29,18 @@ public abstract class Vehicle
     {
         global::System.Console.WriteLine("The vehicle gives out an alarm sound a.k.a. 'honk'.");
     }
+
+    // Constructor below
+    public Vehicle(string brand, int Model, int Year, double Weight, double FuelLevel, double MaxSpeedKmh)
+    {
+        Brand = brand;
+        Model = model;
+        Year = year;
+        Weight = weight;
+        FuelLevel = fuel level;
+        MaxSpeedKmh = max speed kmh;
+    }
+
 
 }
 
