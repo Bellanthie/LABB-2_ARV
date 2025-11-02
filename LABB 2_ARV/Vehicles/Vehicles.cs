@@ -13,7 +13,7 @@ public abstract class Vehicle
         global::System.Console.WriteLine("The vehicle starts...");
     }
 
-    public void Stop()
+    public void Break()
     {
         global::System.Console.WriteLine("The vehicle stops!");
     }
@@ -23,5 +23,11 @@ public abstract class Vehicle
     {
         global::System.Console.WriteLine("The vehicle accelerates.");
     }
+
+    public void Honk()
+    {
+        global::System.Console.WriteLine("The vehicle gives out an alarm sound a.k.a. 'honk'.");
+    }
+
 }
 
