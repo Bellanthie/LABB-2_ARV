@@ -13,5 +13,15 @@ public abstract class Vehicle
         global::System.Console.WriteLine("The vehicle starts...");
     }
 
+    public void Stop()
+    {
+        global::System.Console.WriteLine("The vehicle stops!");
+    }
+
+
+    public void Accelerate()
+    {
+        global::System.Console.WriteLine("The vehicle accelerates.");
+    }
 }
 
