@@ -1,11 +1,11 @@
 public abstract class Vehicle
 {
-    // Attributes below:
+
+    // Attributes below: also variables
     public string Brand { get; set; }
     public int Model { get; set; }
     public int Year { get; set; }
-    public double Weight { get; set; }
-    public double FuelLevel { get; set; }
+    public string Sound { get; set; }
     public double MaxSpeedKmh { get; set; }
 
     // Common methods within the Vehicle class
@@ -31,20 +31,13 @@ public abstract class Vehicle
     }
 
     // Constructor below
-    public Vehicle(string brand, int Model, int Year, double Weight, double FuelLevel, double MaxSpeedKmh)
+    public Vehicle(string brand, int model, int year, string sound, double maxSpeedKmh)
     {
         Brand = brand;
-        Model = modelName;
+        Model = model;
         Year = year;
-        Weight = weight;
-        FuelLevel = fuelLevel;
-        MaxSpeedKmh = maxSpeed kmh;
-    }
-
-    protected Vehicle(string brand, int year)
-    {
-        Brand = brand;
-        Year = year;
+        Sound = sound;
+        MaxSpeedKmh = maxSpeedKmh;
     }
 }
 

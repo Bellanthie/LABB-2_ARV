@@ -1,9 +1,8 @@
-
 public class Motorcycle : Car
 {
 
     public int numberofSeats;
-    // Constructor in Car 'calls' the vehicle constructor
+    // Constructor in Motorcycle 'calls' the vehicle constructor
     public Motorcycle(string brand, int year, int numberOfDoors)
             : base(brand, year)
 
@@ -19,8 +18,9 @@ public class Motorcycle : Car
     // A private property dissimmilar to Motorcycle and Truck (en individuell egenskap som skiljer ena fordonet från det andra)
     public string enclosedBody { get; set; }
 
-    // method for car
+    // method for motorcycle
     public override void Cruise()
     {
         Console.WriteLine($"{Brand} car is cruising on the road.");
+    }
 }
