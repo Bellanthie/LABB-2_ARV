@@ -10,13 +10,13 @@ namespace LABB_2_ARV
     internal class SportsCar : Car
     {
         // Constructor that takes in a unique property (turbo)
-        public SportsCar(string brand, int model, int year, string sound, double maxSpeedKmh, int numberOfDoors, string turbo)
+        public SportsCar(string brand, int model, int year, string sound, double maxSpeedKmh, int numberOfDoors, int turbo)
             : base(brand, model, year, sound, maxSpeedKmh, numberOfDoors)
         {
             Turbo = turbo;
         }
 
-        public string Turbo { get; set; } //default value
+        public int Turbo { get; set; } //default value
 
         // Unique method used ONLY for SportsCar
         public void HighSpeed()
