@@ -1,11 +1,9 @@
 using System;
 public class Truck : Vehicle
 {
-    public int numberofSeats;
     // Constructor in Car 'calls' the vehicle constructor
     public Truck(string brand, int model, int year, string sound, double maxSpeedKmh, int numberOfTires)
             : base(brand, year, model, sound, maxSpeedKmh)
-
     {
         NumberOfTires = numberOfTires;
     }
