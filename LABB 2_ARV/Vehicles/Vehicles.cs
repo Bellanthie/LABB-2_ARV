@@ -1,33 +1,44 @@
 public abstract class Vehicle
 {
-    // Attributes below:
-    public string Brand { get; set; }
-    public int Model { get; set; }
-    public int Year { get; set; }
-    public double Weight { get; set; }
-    public double FuelLevel { get; set; }
-    public double MaxSpeedKmh { get; set; }
 
-    public void Start()
+    // Attributes below: also variables
+    public string Brand { get; set; } = "No Brand";
+    public int Model { get; set; } = 1987;
+    public int Year { get; set; } = 2018;
+    public string Sound { get; set; } = "Vrooom";
+    public double MaxSpeedKmh { get; set; } = 280;
+
+
+
+    // 3 Common methods within the Vehicle class
+    public void StartEngine()
     {
-        global::System.Console.WriteLine("The vehicle starts...");
+        Console.WriteLine("The vehicle starts...");
+        Console.WriteLine(Sound); //vehicle startup sound
     }
 
     public void Break()
     {
-        global::System.Console.WriteLine("The vehicle stops!");
+        Console.WriteLine("The vehicle stops!");
     }
 
 
     public void Accelerate()
     {
-        global::System.Console.WriteLine("The vehicle accelerates.");
+        Console.WriteLine("The vehicle accelerates.");
     }
 
-    public void Honk()
+
+    // Constructor below
+    public Vehicle(string brand, int model, int year, string sound, double maxSpeedKmh)
     {
-        global::System.Console.WriteLine("The vehicle gives out an alarm sound a.k.a. 'honk'.");
-    }
+        Brand = brand;
+        Model = model;
+        Year = year;
+        Sound = sound;
+        MaxSpeedKmh = maxSpeedKmh;
 
+
+    }
 }
 
