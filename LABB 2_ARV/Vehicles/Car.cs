@@ -15,7 +15,7 @@ public class Car : Vehicle
 	public bool IsElectreic { get; set; }
 
 	// A private property dissimmilar to Motorcycle and Truck
-	public string enclosedBody { get; set; }
+	public string enclosedPassengerCabin { get; set; }
 
 	// method for car
 	public override void Cruise()
