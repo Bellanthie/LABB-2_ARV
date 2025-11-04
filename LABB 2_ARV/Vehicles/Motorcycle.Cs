@@ -1,26 +1,22 @@
-public class Motorcycle : Car
-{
+using System.Reflection;
 
-    public int numberofSeats;
+public class Motorcycle : Vehicle
+{
+    
     // Constructor in Motorcycle 'calls' the vehicle constructor
-    public Motorcycle(string brand, int year, int numberOfDoors)
-            : base(brand, year)
+    public Motorcycle(string brand, int model, int year, string sound, double maxSpeedKmh, int numberOfSeats)
+            : base(brand, year, model, sound, maxSpeedKmh)
 
     {
-        numberOfDoors = numberOfDoors;
+        NumberOfSeats = numberOfSeats;
     }
-
+    
     // properties (egenskaper)
-    public int NumberOfDoors { get; set; }
-    public double TrunkCapacityLiters { get; set; }
-    public bool IsElectreic { get; set; }
-
-    // A private property dissimmilar to Motorcycle and Truck (en individuell egenskap som skiljer ena fordonet från det andra)
-    public string enclosedBody { get; set; }
+    public int NumberOfSeats { get; set; } = 1; //defaul value
 
     // method for motorcycle
-    public override void Cruise()
+    public void Wheelie()
     {
-        Console.WriteLine($"{Brand} car is cruising on the road.");
+        Console.WriteLine($"{Brand} motorcycle is running/driving on one wheel.");
     }
 }

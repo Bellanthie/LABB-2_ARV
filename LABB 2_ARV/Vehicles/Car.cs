@@ -10,7 +10,7 @@ public class Car : Vehicle
 	}
 
 	// unique property owned by Car
-	public int NumberOfDoors;
+	public int NumberOfDoors { get; set; } = 4;
 	
 	// method for car
 	public void Cruise()

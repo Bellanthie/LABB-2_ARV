@@ -2,11 +2,13 @@ public abstract class Vehicle
 {
 
     // Attributes below: also variables
-    public string Brand { get; set; }
-    public int Model { get; set; }
-    public int Year { get; set; }
-    public string Sound { get; set; }
-    public double MaxSpeedKmh { get; set; }
+    public string Brand { get; set; } = "No Brand";
+    public int Model { get; set; } = 1987;
+    public int Year { get; set; } = 2018;
+    public string Sound { get; set; } = "Vrooom";
+    public double MaxSpeedKmh { get; set; } = 280;
+
+
 
     // 3 Common methods within the Vehicle class
     public void StartEngine()

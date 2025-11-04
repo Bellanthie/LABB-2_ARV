@@ -3,24 +3,20 @@ public class Truck : Vehicle
 {
     public int numberofSeats;
     // Constructor in Car 'calls' the vehicle constructor
-    public Truck(string brand, int year, int numberOfDoors)
-            : base(brand, year)
+    public Truck(string brand, int model, int year, string sound, double maxSpeedKmh, int numberOfTires)
+            : base(brand, year, model, sound, maxSpeedKmh)
 
     {
-        numberOfDoors = numberOfDoors;
+        NumberOfTires = numberOfTires;
     }
 
     // properties (egenskaper)
-    public int NumberOfDoors { get; set; }
-    public double TrunkCapacityLiters { get; set; }
-    public bool IsElectreic { get; set; }
+    public int NumberOfTires { get; set; } = 8;
+    
 
-    // A private property dissimmilar to Motorcycle and Car (en individuell egenskap som skiljer ena fordonet från det andra)
-    public string enclosedBody { get; set; }
-
-    // method for Truck
-    public override void Cruise()
+    // Unique method for Truck
+    public void Retarder()
     {
-        Console.WriteLine($"{Brand} car is cruising on the road.");
+        Console.WriteLine($"{Brand} Truck is using eco-breaks.");
     }
 }
