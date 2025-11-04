@@ -41,7 +41,10 @@ public abstract class Vehicle
         MaxSpeedKmh = maxSpeed kmh;
     }
 
-
-
+    protected Vehicle(string brand, int year)
+    {
+        Brand = brand;
+        Year = year;
+    }
 }
 
