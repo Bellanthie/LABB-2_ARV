@@ -37,6 +37,8 @@ public abstract class Vehicle
         Year = year;
         Sound = sound;
         MaxSpeedKmh = maxSpeedKmh;
+
+
     }
 }
 
